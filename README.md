@@ -12,13 +12,16 @@ Rules:
 ======================================
 The framework must be executed by
 - php set.php set data.txt
-	This command will be used to save the data to file through a controller named set
+
+ This command will be used to save the data to file through a controller named set
 
 The framework must be accessible through
 - http://localhost/myframework/get?format=json
-	This url will be used to access the data in json format and must be accessible by an ajax call
+
+ This url will be used to access the data in json format and must be accessible by an ajax call
 - http://localhost/myframework/get?format=csv (access data in csv format)
-	This url will be used to access the data in XML format not accessible by an ajax call
+
+ This url will be used to access the data in XML format not accessible by an ajax call
 
 The framework must be composed of the following elements:
 
