@@ -37,3 +37,8 @@ The framework must be composed of the following elements:
 - Explain your work if you which
 
 
+Send project back zipped by email
+
+Cheers!
+
+
