@@ -25,14 +25,14 @@ http://localhost/myframework/get/fans?page_id={fb_page_id}
  
  
  
-The framework should consist of:
+The application should consist of:
 ======================================
 
-- a database technology and structure of your choice.
+- a database technology and structure of your choice
 
 - MVC layers
 
-- The framework must be compatible with an Apache / PHP5.3+ environment under Linux.
+- The application must be compatible with an Apache / PHP5.3+ environment under Linux.
 
 
 Deliverable:
@@ -56,7 +56,7 @@ Evaluation:
 
 - We will evaluate if the requirements above work as expected
 
-- We will evaluate the structure of the framework and the logic behind the separation of concerns. For example in the eventuality of adding other crawlers such as crawling Twitter followers of a Twitter account.
+- We will evaluate the structure of the application and the logic behind the separation of concerns. For example in the eventuality of adding other crawlers such as crawling Twitter followers of a Twitter account.
 
 - We will evaluate overall code quality, readability and consistency
 
