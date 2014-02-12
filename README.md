@@ -2,46 +2,47 @@
 
 Object:
 ======================================
-Create a PHP5.3+ Original Mini Framework
+Create a PHP5.3+ Original Mini Framework that hourly crawls some data, saves it and returns it via HTTP on demand. Make it work by saving hourly the number of fans of a Facebook page.
 
-Purpose of the framework:
-======================================
-Hourly aggregate incoming data (data.txt) and save it to file for consulting, the file structure location and layer are up to you /tmp is allowed.
 
 Rules:
 ======================================
-The framework must be executed by
-- php set.php set data.txt
+The crawling robot must be executed by a cron job every hour via a command line such as :
+- php index.php --uri=crawler/fans --page_id={fb_page_id}
 
- This command will be used to save the data to file through a controller named set
+Formatted, saved data should be accessible in csv via HTTP (not ajax) via a URL such as :
+- http://localhost/myframework/get/fans/csv?page_id={fb_page_id} 
+This call should return the history of fans of the Facebook page, to the hour, as crawled per the robot.
 
-The framework must be accessible through
-- http://localhost/myframework/get?format=json
+Formatted, saved data should be accessible in json via HTTP (ajax only) via a URL such as :
+- http://localhost/myframework/get/fans/json?page_id={fb_page_id} 
 
- This url will be used to access the data in json format and must be accessible by an ajax call
-- http://localhost/myframework/get?format=csv (access data in csv format)
+Data should be graphed in a simple Google Chart line chart via a URL such as :
+- http://localhost/myframework/get/fans?page_id={fb_page_id} 
 
- This url will be used to access the data in XML format not accessible by an ajax call
 
-The framework must be composed of the following elements:
+The framework should consist of:
+======================================
 
-- a collecting layer for accepting the incoming data
+- a database technology and structure of your choice.
 
-- a view layer for viewing the aggregated data
+- MVC layers
 
-- a model layer is not mandatory
-
-- Use the data file called "data.txt" provided in this repository for the command line data import
-
-- The framework must be compatible with an Apache environment under Linux
+- The framework must be compatible with an Apache / PHP5.3+ environment under Linux.
 
 - Provide documentation for the project
 
-- Explain your work if you which
+
+Evaluation:
+======================================
+
+- We will evaluate if the requirements above work as expected
+
+- We will evaluate the structure of the framework and the logic behind the separation of concerns. For example in the eventuality of adding other crawlers such as crawling Twitter followers of a Twitter account.
+
+- We will evaluate overall code quality, readability and consistency
 
 
-Send project back zipped by email
+Send project back zipped by email, containing your PHP files, cron file, an export of your database, and any other comments you might find useful.
 
 Cheers!
-
-
