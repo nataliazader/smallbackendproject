@@ -2,25 +2,29 @@
 
 Object:
 ======================================
-Create a PHP5.3+ Original Mini Framework that hourly crawls some data, saves it and returns it via HTTP on demand. Make it work by saving hourly the number of fans of a Facebook page.
+Create a PHP5.3+ application that hourly crawls some data, saves it and returns it via HTTP on demand. Make it work by saving hourly the number of fans of a Facebook page.
+Answer some questions on how to make it scale (see Deliverable section.)
 
 
 Rules:
 ======================================
-The crawling robot must be executed by a cron job every hour via a command line such as :
-- php index.php --uri=crawler/fans --page_id={fb_page_id}
-
-Formatted, saved data should be accessible in csv via HTTP (not ajax) via a URL such as :
-- http://localhost/myframework/get/fans/csv?page_id={fb_page_id} 
-This call should return the history of fans of the Facebook page, to the hour, as crawled per the robot.
-
-Formatted, saved data should be accessible in json via HTTP (ajax only) via a URL such as :
-- http://localhost/myframework/get/fans/json?page_id={fb_page_id} 
-
-Data should be graphed in a simple Google Chart line chart via a URL such as :
-- http://localhost/myframework/get/fans?page_id={fb_page_id} 
-
-
+- The crawling robot must be executed by a cron job every hour via a command line such as :  
+php index.php --uri=crawler/fans --page_id={fb_page_id}
+ 
+ 
+- Formatted, saved history data (nb of fans, every hour) should be accessible in csv via HTTP (not ajax) via a URL such as :  
+http://localhost/myframework/get/fans/csv?page_id={fb_page_id} 
+ 
+ 
+- Formatted, saved history data (nb of fans, every hour) should be accessible in json via HTTP (ajax only) via a URL such as :  
+http://localhost/myframework/get/fans/json?page_id={fb_page_id} 
+ 
+ 
+- Data should be graphed in a simple Google Chart evolution line chart via a URL such as :  
+http://localhost/myframework/get/fans?page_id={fb_page_id} 
+ 
+ 
+ 
 The framework should consist of:
 ======================================
 
@@ -30,7 +34,21 @@ The framework should consist of:
 
 - The framework must be compatible with an Apache / PHP5.3+ environment under Linux.
 
-- Provide documentation for the project
+
+Deliverable:
+======================================
+
+- Project zipped by email, containing your PHP files, cron file, an export of your database
+
+
+- Answers to the following question : How would you go if we now have 100.000 Facebook pages to get fans count of, every 10 minutes ? Please expand your answer with regards to the following aspects (10 lines max for each) :
+    - What would you change in your architecture to cope with the load ?
+    - How would you prevent race conditions (2 processes updating the same Facebook page at the very same second) ?
+    - How would you keep control of errors ? Servers down, Facebook fails to give fan count,...
+    - How would you propose to control data quality ?
+
+
+- Any other comments you might find useful
 
 
 Evaluation:
@@ -42,7 +60,8 @@ Evaluation:
 
 - We will evaluate overall code quality, readability and consistency
 
+- We will evaluate the answers to the question listed in the Deliverable section and other comments that you may have found useful
 
-Send project back zipped by email, containing your PHP files, cron file, an export of your database, and any other comments you might find useful.
+
 
 Cheers!
