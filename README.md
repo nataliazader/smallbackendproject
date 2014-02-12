@@ -8,6 +8,9 @@ Answer some questions on how to make it scale (see Deliverable section.)
 
 Rules:
 ======================================
+- You should not use a Facebook PHP library to get Facebook fans, but do it raw.
+
+
 - The crawling robot must be executed by a cron job every hour via a command line such as :  
 php index.php --uri=crawler/fans --page_id={fb_page_id}
  
