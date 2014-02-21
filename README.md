@@ -16,7 +16,7 @@ php index.php --uri=crawler/fans --page_id={fb_page_id}
  
  
 - Formatted, saved history data (nb of fans, every hour) should be accessible in json via HTTP via a URL such as :  
-http://localhost/myframework/get/fans/csv?page_id={fb_page_id} 
+http://localhost/myframework/get/fans/json?page_id={fb_page_id} 
  
  
 - Data should be graphed in a simple Google Chart evolution line chart via a URL such as :  
@@ -29,8 +29,6 @@ The application should consist of:
 
 - a database technology and structure of your choice
 
-- MVC layers
-
 - The application must be compatible with an Apache / PHP5.3+ environment under Linux.
 
 
@@ -39,11 +37,9 @@ Deliverable:
 
 - Project zipped by email, containing your PHP files, cron file, an export of your database
 
-
-- Answers to the following question : How would you go if we now have 100.000 Facebook pages to get fans count of, every 10 minutes ? Please expand your answer with regards to the following aspects (10 lines max for each) :
+- Answers to the following question : How would you go if we now have 100.000 Facebook pages to get fans count of, every 10 minutes ? Please expand your answer with regards to the following aspects (a couple of lines max for each) :
     - What would you change in your architecture to cope with the load ?
-    - How would you prevent race conditions (2 processes updating the same Facebook page at the very same second) ?
-    - How would you keep control of errors ? Servers down, Facebook fails to give fan count,...
+    - How would you propose to monitor errors ? Servers down, Facebook fails to give fan count,...
     - How would you propose to control data quality ?
 
 
