@@ -15,12 +15,8 @@ Rules:
 php index.php --uri=crawler/fans --page_id={fb_page_id}
  
  
-- Formatted, saved history data (nb of fans, every hour) should be accessible in csv via HTTP (not ajax) via a URL such as :  
+- Formatted, saved history data (nb of fans, every hour) should be accessible in json via HTTP via a URL such as :  
 http://localhost/myframework/get/fans/csv?page_id={fb_page_id} 
- 
- 
-- Formatted, saved history data (nb of fans, every hour) should be accessible in json via HTTP (ajax only) via a URL such as :  
-http://localhost/myframework/get/fans/json?page_id={fb_page_id} 
  
  
 - Data should be graphed in a simple Google Chart evolution line chart via a URL such as :  
