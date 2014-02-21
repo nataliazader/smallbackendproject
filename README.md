@@ -2,7 +2,7 @@
 
 Object:
 ======================================
-Create a PHP5.3+ application that hourly crawls data, saves it and returns it via HTTP on demand. Make it work by saving hourly the number of fans of a Facebook page.
+Create a PHP5.3+ application that hourly crawls data, saves it and returns it via HTTP on demand. Make it work by saving hourly the number of fans of a Facebook page.  
 Answer some questions on how to make it scale (see Deliverable section.)
 
 
