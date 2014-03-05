@@ -2,7 +2,8 @@
 
 Object:
 ======================================
-Create a PHP 5.3+ application that hourly crawls the evolution of fans of the Facebook Coca-Cola page (https://www.facebook.com/cocacola). Answer some questions on how to make this system scale (see Deliverable section.)
+Create a PHP 5.3+ application that hourly crawls the evolution of fans of the Facebook Coca-Cola page (https://www.facebook.com/cocacola).  
+Answer some questions on how to make this system scale (see Deliverable section.)
 
 
 Rules:
