@@ -19,7 +19,7 @@ http://localhost/myframework/get/fans?page_id={fb_page_id}&format=linechart
 
 - The API should be able to take a format parameter that change the structure of the JSON object outputed
 
-- There will be 3 format: linechart, table, multiplepage. There's json files in this project to show the expected output
+- There will be 3 format: linechart, table, multiplepage. There's json files in this project to show the expected outputs
 
 - Database technology, data structure and application architecture is up to you.
 
