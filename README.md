@@ -35,6 +35,8 @@ Deliverable:
 
 - Create a pull request to submit your project.
 
+- Make sure your repository is publicly accessible
+
 Question:
 ======================================
 - Let us imagine we now have 100.000 Facebook pages to get fans count of, every 10 minutes. Please provide a quick answer to the following questions :
