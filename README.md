@@ -27,9 +27,16 @@ http://localhost/myframework/get/fans?page_id={fb_page_id}&format=linechart
 
 Deliverable:
 ======================================
+- Fork this project
 
-- Project zipped by email, containing your PHP files, cron file, an export of your database
+- Push to your forked repository, containing your PHP files, cron file, an export of your database
 
+- In your repository wiki, answer the questions and put any additionnal informations
+
+- Create a pull request to submit your project.
+
+Question:
+======================================
 - Let us imagine we now have 100.000 Facebook pages to get fans count of, every 10 minutes. Please provide a quick answer to the following questions :
     - What would you change in your architecture to cope with the load ?
     - What kind of other possible problems would you think of ?
