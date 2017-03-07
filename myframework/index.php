@@ -1,11 +1,11 @@
 <?php
 
-include 'model.php';
-include 'connection.php';
+include 'class/model.php';
+include 'class/connection.php';
 
 $app_id='ENTER YOUR APP_ID';
 $app_secret='ENTER YOUR APP_SECRET';
-$fb_page_id='cocacola'; 
+$fb_page_id='cocacola'; //id for cocacola page on facebook
 
 $url='https://graph.facebook.com/'.$fb_page_id.'?access_token='.$app_id.'|'.$app_secret.'&fields=fan_count';
 
