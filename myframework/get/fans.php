@@ -15,10 +15,9 @@ $array=$model->select('fans',$conn);
 if($format=='linechart'){	
 	foreach($array as $value){
 		$arr[] = array( "date"=>$value['time'],"value"=>(int)$value['fan_count']);
-	}
-	
+	}	
 	$obj=(object)array("error"=>false,"data"=>$arr);
-	echo json_encode($obj,true);
+	echo json_encode($obj);
 	exit();	
 }
 
